@@ -15,7 +15,7 @@ public class LancerApp1 {
 		BufferedImage imgLeila= ImageIO.read(new File("images/person1.png"));
 		
 		// création de la fenêtre de l'application
-		JFrame laFenetre= new JFrame("Animation Trainnn, etc.");
+		JFrame laFenetre= new JFrame("Animation Train, etc.");
 		laFenetre.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		laFenetre.setSize(512, 512);
 		
