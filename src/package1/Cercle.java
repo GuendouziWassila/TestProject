@@ -5,8 +5,9 @@ import java.awt.Graphics;
 public class Cercle {
 //c
 	 //-------------- constantes ----------------------------------------
+	//--------------- constante -----------------------------------------
     /**
-     * rayon par dÈfaut du cercle
+     * rayon par d√©faut du cercle
      */
     public final static int R = 5;
 
@@ -17,7 +18,7 @@ public class Cercle {
     protected int x;
 
     /**
-     * ordonnÈes du centre du cercle
+     * ordonn√©es du centre du cercle
      */
     protected int y;
 
@@ -28,10 +29,10 @@ public class Cercle {
 
   // ------ Constructeurs ---------------------------------------------
     /**
-     * crÈer un Cercle en fixant la position initiale de son centre et son rayon.
+     * cr√©er un Cercle en fixant la position initiale de son centre et son rayon.
      *
      * @param xInit abscisse du centre du cercle
-     * @param yInit ordonn√©e du centre du cercle
+     * @param yInit ordonn√É¬©e du centre du cercle
      * @param rInit rayon du cercle
      */
     public Cercle(int xInit, int yInit, int rInit) {
@@ -41,17 +42,17 @@ public class Cercle {
     }
 
     /**
-     * crÈere un Cercle en fixant la position initiale de son centre et avec la
-     * valeur par dÈfaut pour son rayon.
+     * cr√©ere un Cercle en fixant la position initiale de son centre et avec la
+     * valeur par d√©faut pour son rayon.
      *
      * @param xInit abscisse du centre du cercle
-     * @param yInit ordonnÈe du centre du cercle
+     * @param yInit ordonn√©e du centre du cercle
      */
     public Cercle(int xInit, int yInit) {
         this(xInit, yInit, R);
     }
 
-  // ------ MÈthodes -------------------------------------------------
+  // ------ M√©thodes -------------------------------------------------
     /**
      * retourne abscisse du centre du cercle
      *
@@ -62,19 +63,19 @@ public class Cercle {
     }
 
     /**
-     * retourne ordonnÈe du centre du cercle
+     * retourne ordonn√©e du centre du cercle
      *
-     * @return ordonnÈe du centre
+     * @return ordonn√©e du centre
      */
     public int getY() {
         return y;
     }
 
     /**
-     * positionne le centre du cercle en un point donnÈ
+     * positionne le centre du cercle en un point donn√©
      *
      * @param px nouvelle abscisse du centre
-     * @param py nouvelle ordonnÈe du centre
+     * @param py nouvelle ordonn√©e du centre
      */
     public void placerA(int px, int py) {
         x = px;
@@ -84,9 +85,9 @@ public class Cercle {
     /**
      * affiche le cercle
      *
-     * @param g cet objet de classe Graphics passÈ en paramËtre est l'objet qui
-     * prend en charge la gestion de l'affichage dans la fenËtre de dessin.
-     * C'est cet objet qui gËre le contexte graphique" pour cette fenËtre.
+     * @param g cet objet de classe Graphics pass√© en param√®tre est l'objet qui
+     * prend en charge la gestion de l'affichage dans la fen√®tre de dessin.
+     * C'est cet objet qui g√®re le contexte graphique" pour cette fen√®tre.
      */
     public void dessiner(Graphics g) {
         g.drawOval(x - r, y - r, 2 * r, 2 * r);
