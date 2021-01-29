@@ -3,7 +3,7 @@ package package1;
 import java.awt.Graphics;
 
 public class Cercle {
-
+//c
 	 //-------------- constantes ----------------------------------------
     /**
      * rayon par défaut du cercle
